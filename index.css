@@ -12,9 +12,8 @@
 
 .resizer {
     position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
+    width: 8px;
+    height: 8px;
     background-color: black;
     z-index: 2;
 }
@@ -24,17 +23,20 @@
     left: -1px;
     cursor: nw-resize;
 }
+
 .resizer.ne {
     top: -1px;
     right: -1px;
     cursor: ne-resize;
 }
+
 .resizer.sw {
     bottom: -1px;
     left: -1px;
     cursor: sw-resize;
 
 }
+
 .resizer.se {
     bottom: -1px;
     right: -1px;

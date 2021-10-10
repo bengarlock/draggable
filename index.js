@@ -80,7 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (item.classList.contains('se')) {
                 box.style.width = rect.width - (prevX - e.clientX) + 'px'
                 box.style.height = rect.height - (prevY - e.clientY) + 'px'
-
             } else if (item.classList.contains('sw')) {
                 box.style.width = rect.width + (prevX - e.clientX) + 'px'
                 box.style.height = rect.height - (prevY - e.clientY) + 'px'
