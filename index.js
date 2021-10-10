@@ -80,10 +80,20 @@ document.addEventListener("DOMContentLoaded", () => {
             if (item.classList.contains('se')) {
                 box.style.width = rect.width - (prevX - e.clientX) + 'px'
                 box.style.height = rect.height - (prevY - e.clientY) + 'px'
+
             } else if (item.classList.contains('sw')) {
-                console.log("sw")
-                box.style.width = rect.width - (prevX + e.clientX) + 'px'
-                box.style.height = rect.height - (prevX + e.clientY) + 'px'
+                box.style.width = rect.width + (prevX - e.clientX) + 'px'
+                box.style.height = rect.height - (prevY - e.clientY) + 'px'
+                box.style.left = rect.left - (prevX - e.clientX) + 'px'
+            } else if (item.classList.contains('ne')) {
+                box.style.width = rect.width - (prevX - e.clientX) + 'px'
+                box.style.height = rect.height + (prevY - e.clientY) + 'px'
+                box.style.top = rect.top - (prevY - e.clientY) + 'px'
+            } else if (item.classList.contains('nw')) {
+                box.style.width = rect.width + (prevX - e.clientX) + 'px'
+                box.style.height = rect.height + (prevY - e.clientY) + 'px'
+                box.style.top = rect.top - (prevY - e.clientY) + 'px'
+                box.style.left = rect.left - (prevX - e.clientX) + 'px'
             }
 
             prevX = e.clientX;
