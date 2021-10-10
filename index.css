@@ -1,0 +1,11 @@
+.item {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    top: 100px;
+}
+
+#add {
+    user-select: none;
+}
