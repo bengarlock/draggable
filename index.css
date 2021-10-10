@@ -2,8 +2,9 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: green;
+    background-color: #979797;
     top: 100px;
+    box-shadow: 5px 5px 5px #bfbebe;
 }
 
 #add {
